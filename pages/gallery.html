@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Apu Deb Chowdhury</title>
+    <meta name="description" content="Gallery showcasing projects, achievements, and memorable moments from Apu Deb Chowdhury's journey as a software engineer.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/brand.min.css">
+    <link href="../src/css/styles.css" rel="stylesheet" />
+    
+    <!-- Theme Configuration -->
+    <script src="../src/js/config.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+    
+    <!-- Defer Non-Critical JavaScript -->
+    <script defer src="../src/js/app.js"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white/95 dark:bg-gray-800/95 backdrop-blur-md shadow-lg border-b border-gray-100 dark:border-gray-700 transition-all duration-300 fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <a class="text-xl md:text-2xl font-bold flex items-center group" href="../index.html">
+                    <span class="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-3 py-2 rounded-lg text-base md:text-lg font-semibold shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">ADC</span>
+                    <span class="ml-3 dark:text-white text-base md:text-lg font-medium tracking-wide">Gallery</span>
+                </a>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</a>
+                    <a href="../index.html#about" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
+                    <a href="../index.html#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Projects</a>
+                    <a href="blog.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                    <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Services</a>
+                    <a href="../index.html#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600" id="mobile-menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden pb-4" id="mobile-menu">
+                <div class="space-y-2">
+                    <a href="../index.html" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</a>
+                    <a href="../index.html#about" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
+                    <a href="../index.html#projects" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Projects</a>
+                    <a href="blog.html" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                    <a href="services.html" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Services</a>
+                    <a href="../index.html#contact" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Gallery</h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    A visual journey through my projects, achievements, and memorable moments as a software engineer.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Categories -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Web Development Projects -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Web Development Projects</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Project 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-48 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-laptop-code text-4xl mb-2"></i>
+                                    <p class="text-lg font-semibold">E-commerce Platform</p>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Full-Stack E-commerce</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-4">Modern e-commerce platform built with React, Node.js, and MongoDB.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs px-2 py-1 rounded">React</span>
+                                    <span class="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 text-xs px-2 py-1 rounded">Node.js</span>
+                                    <span class="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300 text-xs px-2 py-1 rounded">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="bg-gradient-to-r from-green-500 to-green-600 h-48 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-mobile-alt text-4xl mb-2"></i>
+                                    <p class="text-lg font-semibold">Task Management App</p>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Productivity Dashboard</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-4">Responsive task management application with real-time collaboration features.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs px-2 py-1 rounded">Vue.js</span>
+                                    <span class="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 text-xs px-2 py-1 rounded">Firebase</span>
+                                    <span class="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 text-xs px-2 py-1 rounded">Socket.io</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-48 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-chart-line text-4xl mb-2"></i>
+                                    <p class="text-lg font-semibold">Analytics Dashboard</p>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Data Visualization</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-4">Interactive dashboard for business analytics with real-time data processing.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs px-2 py-1 rounded">React</span>
+                                    <span class="bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300 text-xs px-2 py-1 rounded">D3.js</span>
+                                    <span class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300 text-xs px-2 py-1 rounded">Express</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications & Awards -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Certifications & Awards</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Certification 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-certificate text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Certified Ethical Hacker (CEH)</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">EC-Council Certification</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2024</p>
+                        </div>
+
+                        <!-- Award 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-purple-400 to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-trophy text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Dean's List</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Academic Excellence</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2023</p>
+                        </div>
+
+                        <!-- Certification 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-blue-400 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-code text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Full Stack Developer</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Online Certification</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2023</p>
+                        </div>
+
+                        <!-- Award 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-green-400 to-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-medal text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Best Project Award</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">University Competition</p>
+                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University Activities -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">University Activities & Events</h2>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- Activity 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-40 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-users text-3xl mb-2"></i>
+                                    <p class="text-lg font-semibold">LU Computer Club</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Executive Member</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Organized tech events and workshops for students.</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="bg-gradient-to-r from-red-500 to-red-600 h-40 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-handshake text-3xl mb-2"></i>
+                                    <p class="text-lg font-semibold">Rotaract Club</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Vice-Secretary</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Led community service initiatives and social projects.</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 3 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-40 flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <i class="fas fa-graduation-cap text-3xl mb-2"></i>
+                                    <p class="text-lg font-semibold">Research Bootcamp</p>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Participant</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Intensive research methodology and academic writing program.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports & Recreation -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Sports & Recreation</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Sport 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-futbol text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Football</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">University Team Member</p>
+                        </div>
+
+                        <!-- Sport 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-baseball-ball text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Cricket</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Department Team Captain</p>
+                        </div>
+
+                        <!-- Sport 3 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-table-tennis text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Table Tennis</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Inter-Department Champion</p>
+                        </div>
+
+                        <!-- Sport 4 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
+                            <div class="bg-gradient-to-r from-red-500 to-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-running text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Athletics</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Marathon Participant</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+  <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-950 text-white py-6 xs:py-8 sm:py-10 lg:py-12 transition-colors duration-300">
+        <div class="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xs:gap-6 sm:gap-8">
+                <!-- Brand Section -->
+                <div class="xs:col-span-1 sm:col-span-2 lg:col-span-1 mb-4 xs:mb-6 lg:mb-0">
+                    <div class="mb-4 xs:mb-6">
+                        <div class="text-lg xs:text-xl font-bold mb-3 xs:mb-4">
+                            <span class="bg-primary-600 px-2 py-1 rounded text-sm xs:text-base">ADC</span>
+                            <span class="ml-1 text-sm xs:text-base">Portfolio</span>
+                        </div>
+                        <p class="text-gray-400 text-xs xs:text-sm leading-relaxed max-w-xs">
+                            Software engineer and web developer creating elegant solutions to complex problems.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="xs:col-span-1 sm:col-span-1 lg:col-span-1 mb-4 xs:mb-6 lg:mb-0">
+                    <h4 class="text-sm xs:text-base lg:text-lg font-semibold mb-3 xs:mb-4">Quick Links</h4>
+                    <ul class="space-y-2 xs:space-y-3">
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm block py-1" href="../index.html#about">About</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm block py-1" href="../index.html#projects">Projects</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm block py-1" href="blog.html">Blog</a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm block py-1" href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect Section -->
+                <div class="xs:col-span-1 sm:col-span-1 lg:col-span-1 mb-4 xs:mb-6 lg:mb-0">
+                    <h4 class="text-sm xs:text-base lg:text-lg font-semibold mb-3 xs:mb-4">Connect</h4>
+                    <ul class="space-y-2 xs:space-y-3">
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm flex items-center py-1"
+                                href="https://www.linkedin.com/in/imdeb99/">
+                                <i class="fab fa-linkedin mr-2 text-sm"></i>LinkedIn
+                            </a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm flex items-center py-1"
+                                href="https://github.com/imdeb99">
+                                <i class="fab fa-github mr-2 text-sm"></i>GitHub
+                            </a></li>
+                        <li><a class="text-gray-400 hover:text-white transition-colors text-xs xs:text-sm flex items-center py-1"
+                                href="https://leetcode.com/imDEB99/">
+                                <i class="cib-leetcode mr-2 text-sm" aria-label="LeetCode"></i>LeetCode
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="xs:col-span-1 sm:col-span-2 lg:col-span-1">
+                    <h4 class="text-sm xs:text-base lg:text-lg font-semibold mb-3 xs:mb-4">Contact</h4>
+                    <ul class="space-y-2 xs:space-y-3">
+                        <li class="text-gray-400 text-xs xs:text-sm flex items-start py-1">
+                            <i class="fas fa-map-marker-alt mr-2 mt-1 text-primary-400 text-xs flex-shrink-0"></i>
+                            <span class="break-words">Bashundhara Riverview, Dhaka, Bangladesh <span class="text-xs">🇧🇩</span></span>
+                        </li>
+                        <li class="text-gray-400 text-xs xs:text-sm flex items-center py-1">
+                            <i class="fas fa-envelope mr-2 text-primary-400 text-xs flex-shrink-0"></i>
+                            <span class="break-all">apudeb2000@gmail.com</span>
+                        </li>
+                        <li class="text-gray-400 text-xs xs:text-sm flex items-center py-1">
+                            <i class="fas fa-phone mr-2 text-primary-400 text-xs flex-shrink-0"></i>
+                            <span>+8801725291718</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 mt-6 xs:mt-8 pt-4 xs:pt-6 sm:pt-8">
+                <div class="flex flex-col xs:flex-col sm:flex-row justify-between items-center space-y-3 xs:space-y-4 sm:space-y-0">
+                    <p class="text-gray-400 text-xs xs:text-sm text-center sm:text-left order-2 sm:order-1">
+                        © 2025 Apu Deb Chowdhury. All rights reserved.
+                    </p>
+                    <div class="flex space-x-3 xs:space-x-4 order-1 sm:order-2">
+                        <a class="text-gray-400 hover:text-primary-400 transition-colors text-base xs:text-lg p-1"
+                            href="https://github.com/imdeb99"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-primary-400 transition-colors text-base xs:text-lg p-1"
+                            href="https://www.linkedin.com/in/imdeb99/"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-gray-400 hover:text-primary-400 transition-colors text-base xs:text-lg p-1"
+                            href="https://leetcode.com/imDEB99/"
+                            aria-label="LeetCode">
+                            <i class="cib-leetcode"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        class="fixed bottom-8 right-8 bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-700"
+        id="back-to-top">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+    </button>
+
+    <script>
+        // Blog filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('[data-category]');
+            const blogPosts = document.querySelectorAll('#blog-posts article');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary-600', 'text-white');
+                        btn.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                    });
+                    this.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                    this.classList.add('bg-primary-600', 'text-white');
+
+                    // Filter posts
+                    blogPosts.forEach(post => {
+                        if (category === 'all' || post.getAttribute('data-category') === category) {
+                            post.style.display = 'block';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/98 dark:bg-gray-900/98 backdrop-blur-xl border-t border-gray-200/50 dark:border-gray-700/50 lg:hidden z-50 mobile-bottom-nav" id="mobile-bottom-nav">
+        <div class="flex items-center justify-between px-2 py-1.5 w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
+            <!-- Left Group -->
+            <div class="flex items-center space-x-1">
+                <a href="../index.html#about" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="about">
+                    <i class="fas fa-user text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">About</span>
+                </a>
+                <a href="../index.html#projects" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="projects">
+                    <i class="fas fa-code text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Projects</span>
+                </a>
+                <a href="blog.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="blog">
+                    <i class="fas fa-blog text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Blog</span>
+                </a>
+            </div>
+            
+            <!-- Center Home Button -->
+            <a href="../index.html" class="flex flex-col items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bottom-nav-link home-link" data-section="hero">
+                <i class="fas fa-home text-lg"></i>
+                <span class="text-xs font-semibold mt-0.5">Home</span>
+            </a>
+            
+            <!-- Right Group -->
+            <div class="flex items-center space-x-1">
+                <a href="services.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="services">
+                    <i class="fas fa-cogs text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Services</span>
+                </a>
+                <a href="gallery.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-primary-600 dark:text-primary-400 transition-all duration-300 bottom-nav-link active" data-section="gallery">
+                    <i class="fas fa-images text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Gallery</span>
+                </a>
+                <a href="../index.html#contact" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="contact">
+                    <i class="fas fa-envelope text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

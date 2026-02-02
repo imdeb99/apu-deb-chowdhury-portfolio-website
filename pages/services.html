@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Apu Deb Chowdhury</title>
+    <meta name="description" content="Professional web development and software engineering services offered by Apu Deb Chowdhury">
+    <meta name="keywords" content="web development, software engineering, full-stack development, UI/UX design, consulting">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Services - Apu Deb Chowdhury">
+    <meta property="og:description" content="Professional web development and software engineering services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apudebchowdhury.com/services">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services - Apu Deb Chowdhury">
+    <meta name="twitter:description" content="Professional web development and software engineering services">
+    
+    <!-- Preconnect to External Domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/brand.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+    
+    <!-- Defer Non-Critical JavaScript -->
+    <script defer src="../src/js/app.js"></script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <!-- Fixed Navbar Container -->
+    <div class="fixed top-0 left-0 right-0 z-50">
+        <!-- Top Navbar -->
+        <div class="bg-primary-600 text-white py-2">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full">
+                <!-- Desktop Top Navbar -->
+                <div class="hidden md:flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <span class="flex items-center text-sm">
+                            <i class="fas fa-envelope mr-1"></i>
+                            apudeb2000@gmail.com
+                        </span>
+                        <span class="flex items-center text-sm">
+                            <i class="fas fa-phone mr-1"></i>
+                            +8801725291718
+                        </span>
+                        <span class="flex items-center text-sm">
+                            <i class="fas fa-location-dot mr-1"></i>
+                            Bashundhara Riverview, Dhaka, Bangladesh <span class="text-lg">🇧🇩</span>
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button
+                            class="flex items-center text-sm hover:bg-primary-700 px-2 py-1 rounded transition-colors"
+                            id="theme-toggle">
+                            <i class="fas fa-sun mr-2" id="theme-icon"></i>
+                            <span id="theme-text">Dark Mode</span>
+                        </button>
+                        <a class="flex items-center text-sm hover:bg-primary-700 px-2 py-1 rounded transition-colors"
+                            href="../src/assets/resume/Apu_Deb_Chowdhury_Resume.pdf" download="Apu_Deb_Chowdhury_Resume.pdf" id="resume-link">
+                            <i class="fas fa-file-download mr-1"></i>
+                            Resume
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Top Navbar -->
+                <div class="md:hidden flex items-center justify-between py-1">
+                    <div class="flex items-center space-x-2 text-xs">
+                        <span class="flex items-center">
+                            <i class="fas fa-envelope mr-1"></i>
+                            <span class="hidden sm:inline">apudeb2000@gmail.com</span>
+                            <span class="sm:hidden">Email</span>
+                        </span>
+                        <span class="flex items-center">
+                            <i class="fas fa-phone mr-1"></i>
+                            <span class="hidden sm:inline">+8801725291718</span>
+                            <span class="sm:hidden">Call</span>
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <button
+                            class="flex items-center hover:bg-primary-700 px-1 py-0.5 rounded text-xs transition-colors"
+                            id="theme-toggle-mobile">
+                            <i class="fas fa-sun" id="theme-icon-mobile"></i>
+                        </button>
+                        <a class="flex items-center hover:bg-primary-700 px-1 py-0.5 rounded text-xs transition-colors"
+                            href="../src/assets/resume/Apu_Deb_Chowdhury_Resume.pdf" download="Apu_Deb_Chowdhury_Resume.pdf" id="resume-link-mobile">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Navbar -->
+        <nav class="bg-white dark:bg-gray-800 shadow-md transition-colors duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full">
+                <div class="flex justify-between items-center py-4">
+                    <a class="text-xl font-bold flex items-center" href="../index.html">
+                        <span class="bg-primary-600 text-white px-2 py-1 rounded">ADC</span>
+                        <span class="ml-1 dark:text-white">Portfolio</span>
+                    </a>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                            href="../index.html#about">About</a>
+                        <a class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                            href="../index.html#projects">Projects</a>
+                        <a class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                            href="blog.html">Blog</a>
+                        <a class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                            href="gallery.html">Gallery</a>
+                        <a class="px-3 py-2 text-primary-600 dark:text-primary-400 font-medium transition-colors"
+                            href="services.html">Services</a>
+                        <a class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                            href="../index.html#contact">Contact</a>
+                        <a class="ml-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded transition-colors"
+                            href="../index.html#contact">Get
+                            In Touch</a>
+                    </div>
+                    <button class="md:hidden flex items-center" id="mobile-menu-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="md:hidden hidden pb-4" id="mobile-menu">
+                    <a class="block py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        href="../index.html#about">About</a>
+                    <a class="block py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        href="../index.html#projects">Projects</a>
+                    <a class="block py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        href="blog.html">Blog</a>
+                    <a class="block py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        href="gallery.html">Gallery</a>
+                    <a class="block py-2 text-primary-600 dark:text-primary-400 font-medium transition-colors"
+                        href="services.html">Services</a>
+                    <a class="block py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        href="../index.html#contact">Contact</a>
+                    <a class="block mt-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded text-center transition-colors"
+                        href="../index.html#contact">Get
+                        In Touch</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-32">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 py-16 transition-colors duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    My <span class="text-primary-600 dark:text-primary-400">Services</span>
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    I offer comprehensive web development and software engineering services to help bring your ideas to life. From concept to deployment, I'm here to help you succeed.
+                </p>
+                <div class="mt-8">
+                    <a href="../index.html#contact" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                        Get Started Today
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20 bg-white dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Web Development -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
+                        <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-code text-2xl text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Custom websites and web applications built with modern technologies like React, Vue.js, and Node.js.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Responsive Design
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Modern Frameworks
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Performance Optimization
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                SEO Friendly
+                            </li>
+                        </ul>
+                        <div class="text-primary-600 dark:text-primary-400 font-semibold">Starting at $500</div>
+                    </div>
+
+                    <!-- Full-Stack Development -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
+                        <div class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-server text-2xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Full-Stack Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Complete web applications with both frontend and backend development, including databases and APIs.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Database Design
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                API Development
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                User Authentication
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Cloud Deployment
+                            </li>
+                        </ul>
+                        <div class="text-primary-600 dark:text-primary-400 font-semibold">Starting at $1,200</div>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
+                        <div class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-paint-brush text-2xl text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            User-centered design solutions that create intuitive and engaging digital experiences.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Wireframing
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Prototyping
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                User Research
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Design Systems
+                            </li>
+                        </ul>
+                        <div class="text-primary-600 dark:text-primary-400 font-semibold">Starting at $400</div>
+                    </div>
+
+                    <!-- E-Commerce Solutions -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
+                        <div class="bg-orange-100 dark:bg-orange-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-shopping-cart text-2xl text-orange-600 dark:text-orange-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">E-Commerce Solutions</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Complete online stores with payment processing, inventory management, and order tracking.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Payment Integration
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Inventory Management
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Order Processing
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Admin Dashboard
+                            </li>
+                        </ul>
+                        <div class="text-primary-600 dark:text-primary-400 font-semibold">Starting at $2,000</div>
+                    </div>
+
+                    <!-- Mobile App Development -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
+                        <div class="bg-indigo-100 dark:bg-indigo-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-mobile-alt text-2xl text-indigo-600 dark:text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Mobile App Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Cross-platform mobile applications using React Native and Flutter for iOS and Android.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Cross-Platform
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Native Performance
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                App Store Deployment
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Push Notifications
+                            </li>
+                        </ul>
+                        <div class="text-primary-600 dark:text-primary-400 font-semibold">Starting at $1,500</div>
+                    </div>
+
+                    <!-- Technical Consulting -->
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
+                        <div class="bg-red-100 dark:bg-red-900 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-lightbulb text-2xl text-red-600 dark:text-red-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Technical Consulting</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Strategic technical guidance, code reviews, and architecture planning for your projects.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Architecture Planning
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Code Reviews
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Performance Audits
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Technology Selection
+                            </li>
+                        </ul>
+                        <div class="text-primary-600 dark:text-primary-400 font-semibold">$100/hour</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">My Development Process</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        A structured approach to deliver high-quality solutions on time and within budget.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">1</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Discovery</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Understanding your requirements, goals, and target audience through detailed consultation.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">2</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Planning</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Creating detailed project plans, wireframes, and technical specifications.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">3</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Building your solution using best practices and modern technologies.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold text-xl">4</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Delivery</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Testing, deployment, and ongoing support to ensure your success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-primary-600 dark:bg-primary-700 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Project?</h2>
+                <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                    Let's discuss your ideas and create something amazing together. Get in touch for a free consultation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                        Get Free Quote
+                    </a>
+                    <a href="projects.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-primary-600 transition-colors">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-300" id="contact">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Work Together</h2>
+                <div class="w-20 h-1 bg-primary-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-lg">
+                    Ready to bring your ideas to life? I'm here to help you build exceptional digital experiences. 
+                    Choose your preferred way to connect and let's discuss your project.
+                </p>
+            </div>
+
+            <!-- Professional Contact Options -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 section-fade">
+                <!-- WhatsApp Contact -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                            <i class="fab fa-whatsapp text-2xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">WhatsApp</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Quick messaging</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Get instant responses for urgent inquiries and quick project discussions.</p>
+                    <a href="https://wa.me/8801725291718?text=Hi! I'm interested in discussing a project with you." 
+                       target="_blank"
+                       class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Start Chat
+                    </a>
+                </div>
+
+                <!-- Email Contact -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-2xl text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Email</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Professional inquiries</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Perfect for detailed project requirements and formal business communications.</p>
+                    <a href="mailto:apudeb2000@gmail.com?subject=Project Inquiry&body=Hi Apu,%0D%0A%0D%0AI'm interested in discussing a project with you.%0D%0A%0D%0AProject details:%0D%0A%0D%0ABest regards" 
+                       class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Send Email
+                    </a>
+                </div>
+
+                <!-- Schedule Meeting -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-calendar-alt text-2xl text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Schedule Meeting</h3>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Free consultation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Book a 30-minute free consultation to discuss your project in detail.</p>
+                    <button id="schedule-meeting" 
+                            class="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors">
+                        <i class="fas fa-calendar-plus mr-2"></i>
+                        Book Meeting
+                    </button>
+                </div>
+            </div>
+
+            <!-- Availability & Response Time -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-12 section-fade">
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="bg-green-100 dark:bg-green-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-circle text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-semibold text-green-600 dark:text-green-400">Available for Projects</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Currently accepting new clients</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-semibold">Response Time</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-handshake text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-semibold">Free Consultation</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">30-minute discovery call</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-8 section-fade">
+                <!-- Contact Information -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 h-full">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <!-- Primary Contact Methods -->
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start">
+                                <div class="bg-primary-100 dark:bg-primary-900 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-primary-600 dark:text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">For detailed project discussions</p>
+                                    <a href="mailto:apudeb2000@gmail.com" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                        apudeb2000@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-primary-100 dark:bg-primary-900 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-primary-600 dark:text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Phone</h4>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">Available 9 AM - 6 PM (GMT+6)</p>
+                                    <a href="tel:+8801725291718" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                        +880 1725 291718
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-primary-100 dark:bg-primary-900 p-3 rounded-full mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-primary-600 dark:text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">Based in Bangladesh</p>
+                                    <p class="text-gray-600 dark:text-gray-400">
+                                        Bashundhara Riverview, Dhaka, Bangladesh 🇧🇩
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Alternative Contact Methods -->
+                        <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+                            <h4 class="text-lg font-medium mb-4">Alternative Contact</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <a href="https://t.me/imdeb99" target="_blank" 
+                                   class="flex items-center p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
+                                    <i class="fab fa-telegram text-blue-600 dark:text-blue-400 mr-3"></i>
+                                    <span class="text-sm font-medium">Telegram</span>
+                                </a>
+                                <a href="skype:apudeb2000?chat" target="_blank" 
+                                   class="flex items-center p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
+                                    <i class="fab fa-skype text-blue-600 dark:text-blue-400 mr-3"></i>
+                                    <span class="text-sm font-medium">Skype</span>
+                                </a>
+                                <a href="https://wa.me/8801725291718" target="_blank" 
+                                   class="flex items-center p-3 bg-green-50 dark:bg-green-900/30 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors">
+                                    <i class="fab fa-whatsapp text-green-600 dark:text-green-400 mr-3"></i>
+                                    <span class="text-sm font-medium">WhatsApp</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/imdeb99/" target="_blank" 
+                                   class="flex items-center p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
+                                    <i class="fab fa-linkedin text-blue-600 dark:text-blue-400 mr-3"></i>
+                                    <span class="text-sm font-medium">LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="border-t border-gray-200 dark:border-gray-700 pt-6 mt-6">
+                            <h4 class="text-lg font-medium mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/imdeb99/" target="_blank" 
+                                   class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-linkedin text-xl"></i>
+                                </a>
+                                <a href="https://github.com/imdeb99" target="_blank" 
+                                   class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                                <a href="https://leetcode.com/imDEB99/" target="_blank" 
+                                   class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                                    <i class="cib-leetcode text-xl"></i>
+                                </a>
+                                <a href="https://twitter.com/imdeb99" target="_blank" 
+                                   class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="https://instagram.com/imdeb99" target="_blank" 
+                                   class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Contact Form -->
+                <div class="lg:col-span-3">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <!-- Personal Information -->
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium mb-2">Full Name *</label>
+                                    <input type="text" id="name" name="name" required
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" required
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone"
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-sm font-medium mb-2">Company/Organization</label>
+                                    <input type="text" id="company" name="company"
+                                           class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                </div>
+                            </div>
+
+                            <!-- Project Details -->
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="project-type" class="block text-sm font-medium mb-2">Project Type *</label>
+                                    <select id="project-type" name="project-type" required
+                                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                        <option value="">Select project type</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="mobile-app">Mobile App Development</option>
+                                        <option value="ecommerce">E-commerce Solution</option>
+                                        <option value="api-development">API Development</option>
+                                        <option value="consulting">Technical Consulting</option>
+                                        <option value="maintenance">Website Maintenance</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="budget" class="block text-sm font-medium mb-2">Budget Range</label>
+                                    <select id="budget" name="budget"
+                                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-1k">Under $1,000</option>
+                                        <option value="1k-5k">$1,000 - $5,000</option>
+                                        <option value="5k-10k">$5,000 - $10,000</option>
+                                        <option value="10k-25k">$10,000 - $25,000</option>
+                                        <option value="25k-plus">$25,000+</option>
+                                        <option value="discuss">Let's discuss</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div>
+                                    <label for="timeline" class="block text-sm font-medium mb-2">Timeline</label>
+                                    <select id="timeline" name="timeline"
+                                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                        <option value="">Select timeline</option>
+                                        <option value="asap">ASAP</option>
+                                        <option value="1-month">Within 1 month</option>
+                                        <option value="2-3-months">2-3 months</option>
+                                        <option value="3-6-months">3-6 months</option>
+                                        <option value="6-months-plus">6+ months</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="priority" class="block text-sm font-medium mb-2">Priority</label>
+                                    <select id="priority" name="priority"
+                                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                        <option value="normal">Normal</option>
+                                        <option value="high">High</option>
+                                        <option value="urgent">Urgent</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="contact-method" class="block text-sm font-medium mb-2">Preferred Contact</label>
+                                    <select id="contact-method" name="contact-method"
+                                            class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                                        <option value="email">Email</option>
+                                        <option value="phone">Phone</option>
+                                        <option value="whatsapp">WhatsApp</option>
+                                        <option value="telegram">Telegram</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium mb-2">Subject *</label>
+                                <input type="text" id="subject" name="subject" required
+                                       placeholder="Brief description of your project"
+                                       class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Project Details *</label>
+                                <textarea id="message" name="message" rows="6" required
+                                          placeholder="Please provide detailed information about your project, including goals, requirements, and any specific features you need..."
+                                          class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors resize-vertical"></textarea>
+                            </div>
+
+                            <!-- Form Message -->
+                            <div id="form-message" class="hidden"></div>
+
+                            <button type="submit" 
+                                    class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2">
+                                <span class="flex items-center justify-center">
+                                    <i class="fas fa-paper-plane mr-2"></i>
+                                    Send Project Inquiry
+                                </span>
+                            </button>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
+                                <i class="fas fa-shield-alt mr-1"></i>
+                                Your information is secure and will never be shared with third parties.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xs:gap-6 sm:gap-8">
+                <!-- Brand Section -->
+                <div class="xs:col-span-1 sm:col-span-2 lg:col-span-1 mb-4 xs:mb-6 lg:mb-0">
+                    <h3 class="text-xl xs:text-2xl font-bold mb-2 xs:mb-4 text-primary-400">Apu Deb Chowdhury</h3>
+                    <p class="text-gray-400 text-sm xs:text-base mb-3 xs:mb-4">
+                        Passionate software engineer creating innovative digital solutions.
+                    </p>
+                    <div class="flex space-x-3 xs:space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-lg xs:text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-lg xs:text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-lg xs:text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-lg xs:text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="mb-4 xs:mb-6 lg:mb-0">
+                    <h4 class="text-base xs:text-lg font-semibold mb-2 xs:mb-4">Quick Links</h4>
+                    <ul class="space-y-1 xs:space-y-2">
+                        <li><a href="../index.html#about" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">About</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">Projects</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">Blog</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">Gallery</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div class="mb-4 xs:mb-6 lg:mb-0">
+                    <h4 class="text-base xs:text-lg font-semibold mb-2 xs:mb-4">Connect</h4>
+                    <ul class="space-y-1 xs:space-y-2">
+                        <li><a href="../index.html#contact" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">LinkedIn</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">GitHub</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-sm xs:text-base">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-base xs:text-lg font-semibold mb-2 xs:mb-4">Contact</h4>
+                    <ul class="space-y-1 xs:space-y-2">
+                        <li class="text-gray-400 text-sm xs:text-base">
+                            <i class="fas fa-envelope mr-2"></i>
+                            hello@apudebchowdhury.com
+                        </li>
+                        <li class="text-gray-400 text-sm xs:text-base">
+                            <i class="fas fa-phone mr-2"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="text-gray-400 text-sm xs:text-base">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            New York, NY
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 mt-6 xs:mt-8 pt-6 xs:pt-8">
+                <div class="flex flex-col xs:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-xs xs:text-sm mb-2 xs:mb-0">
+                        © 2024 Apu Deb Chowdhury. All rights reserved.
+                    </p>
+                    <div class="flex space-x-4 xs:space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-xs xs:text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors text-xs xs:text-sm">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="fixed bottom-4 xs:bottom-6 right-4 xs:right-6 bg-primary-600 hover:bg-primary-700 text-white p-2 xs:p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible">
+            <i class="fas fa-arrow-up text-sm xs:text-base"></i>
+        </button>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/98 dark:bg-gray-900/98 backdrop-blur-xl border-t border-gray-200/50 dark:border-gray-700/50 lg:hidden z-50 mobile-bottom-nav" id="mobile-bottom-nav">
+        <div class="flex items-center justify-between px-2 py-1.5 w-full max-w-sm sm:max-w-md lg:max-w-lg mx-auto">
+            <!-- Left Group -->
+            <div class="flex items-center space-x-1">
+                <a href="../index.html#about" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="about">
+                    <i class="fas fa-user text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">About</span>
+                </a>
+                <a href="../index.html#projects" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="projects">
+                    <i class="fas fa-code text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Projects</span>
+                </a>
+                <a href="blog.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="blog">
+                    <i class="fas fa-blog text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Blog</span>
+                </a>
+            </div>
+            
+            <!-- Center Home Button -->
+            <a href="../index.html" class="flex flex-col items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bottom-nav-link home-link" data-section="hero">
+                <i class="fas fa-home text-lg"></i>
+                <span class="text-xs font-semibold mt-0.5">Home</span>
+            </a>
+            
+            <!-- Right Group -->
+            <div class="flex items-center space-x-1">
+                <a href="services.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-primary-600 dark:text-primary-400 transition-all duration-300 bottom-nav-link active" data-section="services">
+                    <i class="fas fa-cogs text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Services</span>
+                </a>
+                <a href="gallery.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="gallery">
+                    <i class="fas fa-images text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Gallery</span>
+                </a>
+                <a href="../index.html#contact" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="contact">
+                    <i class="fas fa-envelope text-base mb-0.5"></i>
+                    <span class="text-xs font-medium">Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
