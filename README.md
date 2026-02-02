@@ -97,8 +97,6 @@ apu-deb-chowdhury-portfolio/
    python3 -m http.server 8000
    ```
 
-3. **Access the website**
-   - Open your browser and navigate to `http://localhost:8000`
 
 ## 👤 Author
 
@@ -106,6 +104,3 @@ apu-deb-chowdhury-portfolio/
 - GitHub: [@imdeb99](https://github.com/imdeb99)
 - LinkedIn: [Apu Deb Chowdhury](https://www.linkedin.com/in/apudebchowdhury)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
