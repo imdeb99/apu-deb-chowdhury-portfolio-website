@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Apu Deb Chowdhury</title>
     <meta name="description" content="Gallery showcasing projects, achievements, and memorable moments from Apu Deb Chowdhury's journey as a software engineer.">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -22,10 +22,10 @@
                             300: '#93c5fd',
                             400: '#60a5fa',
                             500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
                         }
                     }
                 }
@@ -35,13 +35,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/brand.min.css">
     <link href="../src/css/styles.css" rel="stylesheet" />
-    
+
     <!-- Theme Configuration -->
     <script src="../src/js/config.js"></script>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
-    
+
     <!-- Defer Non-Critical JavaScript -->
     <script defer src="../src/js/app.js"></script>
 </head>
@@ -56,32 +56,34 @@
                     <span class="bg-gradient-to-r from-primary-600 to-primary-700 text-white px-3 py-2 rounded-lg text-base md:text-lg font-semibold shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">ADC</span>
                     <span class="ml-3 dark:text-white text-base md:text-lg font-medium tracking-wide">Gallery</span>
                 </a>
-                
+
                 <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="../index.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</a>
                     <a href="../index.html#about" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
                     <a href="../index.html#projects" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Projects</a>
                     <a href="blog.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                    <a href="gallery.html" class="text-primary-600 dark:text-primary-400 font-medium transition-colors">Gallery</a>
                     <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Services</a>
                     <a href="../index.html#contact" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600" id="mobile-menu-toggle">
+                <button class="md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-600" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
                     </svg>
                 </button>
             </div>
-            
+
             <!-- Mobile Menu -->
-            <div class="md:hidden hidden pb-4" id="mobile-menu">
+            <div class="md:hidden hidden pb-4 mobile-menu" id="mobile-menu">
                 <div class="space-y-2">
                     <a href="../index.html" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Home</a>
                     <a href="../index.html#about" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
                     <a href="../index.html#projects" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Projects</a>
                     <a href="blog.html" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Blog</a>
+                    <a href="gallery.html" class="block py-2 px-4 text-primary-600 dark:text-primary-400 font-medium transition-colors">Gallery</a>
                     <a href="services.html" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Services</a>
                     <a href="../index.html#contact" class="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
                 </div>
@@ -92,223 +94,362 @@
     <!-- Main Content -->
     <main class="pt-20">
         <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 py-16">
+        <section class="bg-gradient-to-r from-primary-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 py-16">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6">Gallery</h1>
+                <div class="w-20 h-1 bg-primary-600 mx-auto mb-6"></div>
                 <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                     A visual journey through my projects, achievements, and memorable moments as a software engineer.
                 </p>
             </div>
         </section>
 
-        <!-- Gallery Categories -->
-        <section class="py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <!-- Web Development Projects -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Web Development Projects</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Project 1 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-48 flex items-center justify-center">
-                                <div class="text-white text-center">
-                                    <i class="fas fa-laptop-code text-4xl mb-2"></i>
-                                    <p class="text-lg font-semibold">E-commerce Platform</p>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">Full-Stack E-commerce</h3>
-                                <p class="text-gray-600 dark:text-gray-400 mb-4">Modern e-commerce platform built with React, Node.js, and MongoDB.</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs px-2 py-1 rounded">React</span>
-                                    <span class="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 text-xs px-2 py-1 rounded">Node.js</span>
-                                    <span class="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300 text-xs px-2 py-1 rounded">MongoDB</span>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Gallery Photo Grid -->
+        <section class="py-16 sm:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 
-                        <!-- Project 2 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                            <div class="bg-gradient-to-r from-green-500 to-green-600 h-48 flex items-center justify-center">
-                                <div class="text-white text-center">
-                                    <i class="fas fa-mobile-alt text-4xl mb-2"></i>
-                                    <p class="text-lg font-semibold">Task Management App</p>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">Productivity Dashboard</h3>
-                                <p class="text-gray-600 dark:text-gray-400 mb-4">Responsive task management application with real-time collaboration features.</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs px-2 py-1 rounded">Vue.js</span>
-                                    <span class="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 text-xs px-2 py-1 rounded">Firebase</span>
-                                    <span class="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 text-xs px-2 py-1 rounded">Socket.io</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Project 3 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                            <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-48 flex items-center justify-center">
-                                <div class="text-white text-center">
-                                    <i class="fas fa-chart-line text-4xl mb-2"></i>
-                                    <p class="text-lg font-semibold">Analytics Dashboard</p>
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <h3 class="text-xl font-semibold mb-2">Data Visualization</h3>
-                                <p class="text-gray-600 dark:text-gray-400 mb-4">Interactive dashboard for business analytics with real-time data processing.</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 text-xs px-2 py-1 rounded">React</span>
-                                    <span class="bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300 text-xs px-2 py-1 rounded">D3.js</span>
-                                    <span class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300 text-xs px-2 py-1 rounded">Express</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Filter Chips -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12" id="gallery-filters" role="group" aria-label="Filter gallery by category">
+                    <button class="px-4 py-2 rounded-full text-sm font-medium bg-primary-600 text-white transition-colors" data-category="all">All Photos</button>
+                    <button class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-primary-600 hover:text-white transition-colors" data-category="projects">Projects</button>
+                    <button class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-primary-600 hover:text-white transition-colors" data-category="events">Events</button>
+                    <button class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-primary-600 hover:text-white transition-colors" data-category="certifications">Certifications</button>
+                    <button class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-primary-600 hover:text-white transition-colors" data-category="sports">Sports</button>
+                    <button class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-primary-600 hover:text-white transition-colors" data-category="travel">Travel</button>
                 </div>
 
-                <!-- Certifications & Awards -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Certifications & Awards</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Certification 1 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-certificate text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Certified Ethical Hacker (CEH)</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">EC-Council Certification</p>
-                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2024</p>
-                        </div>
-
-                        <!-- Award 1 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-purple-400 to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-trophy text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Dean's List</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Academic Excellence</p>
-                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2023</p>
-                        </div>
-
-                        <!-- Certification 2 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-blue-400 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-code text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Full Stack Developer</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Online Certification</p>
-                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2023</p>
-                        </div>
-
-                        <!-- Award 2 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-green-400 to-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-medal text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Best Project Award</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">University Competition</p>
-                            <p class="text-gray-500 dark:text-gray-500 text-xs mt-2">2022</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- University Activities -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">University Activities & Events</h2>
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <!-- Activity 1 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                            <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-40 flex items-center justify-center">
-                                <div class="text-white text-center">
-                                    <i class="fas fa-users text-3xl mb-2"></i>
-                                    <p class="text-lg font-semibold">LU Computer Club</p>
+                <!-- Photo Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6" id="gallery-grid">
+                    <!-- Projects -->
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="projects">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="E-commerce Platform - 2024" data-icon="fa-cart-shopping" data-file="gallery-ecommerce-1.jpg" aria-label="Open E-commerce Platform photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-cart-shopping" aria-hidden="true"></i>
+                                    <span>Add image: gallery-ecommerce-1.jpg</span>
                                 </div>
                             </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-semibold mb-2">Executive Member</h3>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Organized tech events and workshops for students.</p>
-                            </div>
-                        </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">E-commerce Platform</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Projects</span>
+                        </figcaption>
+                    </figure>
 
-                        <!-- Activity 2 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                            <div class="bg-gradient-to-r from-red-500 to-red-600 h-40 flex items-center justify-center">
-                                <div class="text-white text-center">
-                                    <i class="fas fa-handshake text-3xl mb-2"></i>
-                                    <p class="text-lg font-semibold">Rotaract Club</p>
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="projects">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Analytics Dashboard - 2024" data-icon="fa-chart-line" data-file="gallery-analytics-1.jpg" aria-label="Open Analytics Dashboard photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                    <span>Add image: gallery-analytics-1.jpg</span>
                                 </div>
                             </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-semibold mb-2">Vice-Secretary</h3>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Led community service initiatives and social projects.</p>
-                            </div>
-                        </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Analytics Dashboard</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Projects</span>
+                        </figcaption>
+                    </figure>
 
-                        <!-- Activity 3 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                            <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-40 flex items-center justify-center">
-                                <div class="text-white text-center">
-                                    <i class="fas fa-graduation-cap text-3xl mb-2"></i>
-                                    <p class="text-lg font-semibold">Research Bootcamp</p>
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="projects">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Chat Application - 2024" data-icon="fa-comments" data-file="gallery-chat-1.jpg" aria-label="Open Chat Application photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-comments" aria-hidden="true"></i>
+                                    <span>Add image: gallery-chat-1.jpg</span>
                                 </div>
                             </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-semibold mb-2">Participant</h3>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Intensive research methodology and academic writing program.</p>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Chat Application</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Projects</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="projects">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Weather App - 2024" data-icon="fa-cloud-sun" data-file="gallery-weather-1.jpg" aria-label="Open Weather App photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+                                    <span>Add image: gallery-weather-1.jpg</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Weather App</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Projects</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Events -->
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="events">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="LU Computer Club - 2022" data-icon="fa-users" data-file="gallery-club-1.jpg" aria-label="Open LU Computer Club photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-users" aria-hidden="true"></i>
+                                    <span>Add image: gallery-club-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">LU Computer Club</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2022 · Events</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="events">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Rotaract Club Meetup - 2023" data-icon="fa-handshake" data-file="gallery-rotaract-1.jpg" aria-label="Open Rotaract Club photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-handshake" aria-hidden="true"></i>
+                                    <span>Add image: gallery-rotaract-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Rotaract Club Meetup</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Events</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="events">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Research Bootcamp - 2021" data-icon="fa-graduation-cap" data-file="gallery-bootcamp-1.jpg" aria-label="Open Research Bootcamp photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                    <span>Add image: gallery-bootcamp-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Research Bootcamp</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2021 · Events</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="events">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="University Tech Fest - 2023" data-icon="fa-laptop-code" data-file="gallery-techfest-1.jpg" aria-label="Open University Tech Fest photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                                    <span>Add image: gallery-techfest-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">University Tech Fest</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Events</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Certifications -->
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="certifications">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Certified Ethical Hacker (CEH) - 2023" data-icon="fa-certificate" data-file="gallery-ceh-1.jpg" aria-label="Open CEH certificate photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                                    <span>Add image: gallery-ceh-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Certified Ethical Hacker</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Certifications</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="certifications">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Full Stack Developer - 2023" data-icon="fa-code" data-file="gallery-fullstack-1.jpg" aria-label="Open Full Stack certificate photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-code" aria-hidden="true"></i>
+                                    <span>Add image: gallery-fullstack-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Full Stack Developer</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Certifications</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="certifications">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Dean's List - 2023" data-icon="fa-trophy" data-file="gallery-deanslist-1.jpg" aria-label="Open Dean's List photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                                    <span>Add image: gallery-deanslist-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Dean's List</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Certifications</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="certifications">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Best Project Award - 2022" data-icon="fa-medal" data-file="gallery-award-1.jpg" aria-label="Open Best Project Award photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-medal" aria-hidden="true"></i>
+                                    <span>Add image: gallery-award-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Best Project Award</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2022 · Certifications</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Sports -->
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="sports">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Football Match - 2023" data-icon="fa-futbol" data-file="gallery-football-1.jpg" aria-label="Open Football photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-futbol" aria-hidden="true"></i>
+                                    <span>Add image: gallery-football-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Football Match</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Sports</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="sports">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Cricket Tournament - 2022" data-icon="fa-baseball-ball" data-file="gallery-cricket-1.jpg" aria-label="Open Cricket photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-baseball-ball" aria-hidden="true"></i>
+                                    <span>Add image: gallery-cricket-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Cricket Tournament</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2022 · Sports</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="sports">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Table Tennis Championship - 2023" data-icon="fa-table-tennis" data-file="gallery-tabletennis-1.jpg" aria-label="Open Table Tennis photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-table-tennis" aria-hidden="true"></i>
+                                    <span>Add image: gallery-tabletennis-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Table Tennis Championship</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Sports</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="sports">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Marathon Day - 2024" data-icon="fa-running" data-file="gallery-marathon-1.jpg" aria-label="Open Marathon photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-running" aria-hidden="true"></i>
+                                    <span>Add image: gallery-marathon-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Marathon Day</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Sports</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Travel -->
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="travel">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Sylhet Tea Gardens - 2023" data-icon="fa-mountain-sun" data-file="gallery-sylhet-1.jpg" aria-label="Open Sylhet Tea Gardens photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-mountain-sun" aria-hidden="true"></i>
+                                    <span>Add image: gallery-sylhet-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Sylhet Tea Gardens</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Travel</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="travel">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Cox's Bazar Trip - 2023" data-icon="fa-umbrella-beach" data-file="gallery-coxsbazar-1.jpg" aria-label="Open Cox's Bazar photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-umbrella-beach" aria-hidden="true"></i>
+                                    <span>Add image: gallery-coxsbazar-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Cox's Bazar Trip</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2023 · Travel</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="travel">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Bandarban Trek - 2024" data-icon="fa-hiking" data-file="gallery-bandarban-1.jpg" aria-label="Open Bandarban photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-hiking" aria-hidden="true"></i>
+                                    <span>Add image: gallery-bandarban-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Bandarban Trek</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Travel</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300" data-category="travel">
+                        <button type="button" class="w-full text-left gallery-open" data-caption="Conference Trip - 2024" data-icon="fa-plane-departure" data-file="gallery-conference-1.jpg" aria-label="Open Conference Trip photo">
+                            <div class="media-placeholder media-placeholder-square">
+                                <div class="text-center px-4">
+                                    <i class="fas fa-plane-departure" aria-hidden="true"></i>
+                                    <span>Add image: gallery-conference-1.jpg</span>
+                                </div>
+                            </div>
+                        </button>
+                        <figcaption class="px-4 py-3">
+                            <span class="text-sm font-semibold block">Conference Trip</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">2024 · Travel</span>
+                        </figcaption>
+                    </figure>
                 </div>
 
-                <!-- Sports & Recreation -->
-                <div class="mb-16">
-                    <h2 class="text-3xl font-bold mb-8 text-center">Sports & Recreation</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Sport 1 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-green-500 to-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-futbol text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Football</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">University Team Member</p>
-                        </div>
-
-                        <!-- Sport 2 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-baseball-ball text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Cricket</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Department Team Captain</p>
-                        </div>
-
-                        <!-- Sport 3 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-purple-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-table-tennis text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Table Tennis</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Inter-Department Champion</p>
-                        </div>
-
-                        <!-- Sport 4 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow text-center">
-                            <div class="bg-gradient-to-r from-red-500 to-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i class="fas fa-running text-white text-2xl"></i>
-                            </div>
-                            <h3 class="text-lg font-semibold mb-2">Athletics</h3>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Marathon Participant</p>
-                        </div>
-                    </div>
-                </div>
-
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
+                    Drop your photos into <code class="bg-gray-100 dark:bg-gray-700 px-1.5 py-0.5 rounded">src/assets/images/gallery/</code> using the filenames shown on each placeholder to make them appear automatically.
+                </p>
             </div>
         </section>
     </main>
 
-  <!-- Footer -->
+    <!-- Lightbox -->
+    <div class="fixed inset-0 bg-black/90 z-[60] hidden items-center justify-center p-4" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+        <button class="absolute top-4 right-4 text-white text-3xl w-12 h-12 hover:bg-white/10 rounded-full transition-colors" id="lightbox-close" aria-label="Close photo preview">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="max-w-3xl w-full text-center">
+            <div class="media-placeholder media-placeholder-square rounded-xl shadow-2xl" id="lightbox-image">
+                <div class="text-center px-4">
+                    <i class="fas fa-image" aria-hidden="true"></i>
+                    <span id="lightbox-file">Add image</span>
+                </div>
+            </div>
+            <p class="text-white text-lg font-medium mt-4" id="lightbox-caption">Photo</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="bg-gray-800 dark:bg-gray-950 text-white py-6 xs:py-8 sm:py-10 lg:py-12 transition-colors duration-300">
         <div class="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 max-w-7xl">
             <!-- Main Footer Content -->
@@ -362,7 +503,7 @@
                     <ul class="space-y-2 xs:space-y-3">
                         <li class="text-gray-400 text-xs xs:text-sm flex items-start py-1">
                             <i class="fas fa-map-marker-alt mr-2 mt-1 text-primary-400 text-xs flex-shrink-0"></i>
-                            <span class="break-words">Bashundhara Riverview, Dhaka, Bangladesh <span class="text-xs">🇧🇩</span></span>
+                            <span class="break-words">Habiganj, Sylhet, Bangladesh <span class="text-xs">🇧🇩</span></span>
                         </li>
                         <li class="text-gray-400 text-xs xs:text-sm flex items-center py-1">
                             <i class="fas fa-envelope mr-2 text-primary-400 text-xs flex-shrink-0"></i>
@@ -384,18 +525,15 @@
                     </p>
                     <div class="flex space-x-3 xs:space-x-4 order-1 sm:order-2">
                         <a class="text-gray-400 hover:text-primary-400 transition-colors text-base xs:text-lg p-1"
-                            href="https://github.com/imdeb99"
-                            aria-label="GitHub">
+                            href="https://github.com/imdeb99" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         <a class="text-gray-400 hover:text-primary-400 transition-colors text-base xs:text-lg p-1"
-                            href="https://www.linkedin.com/in/imdeb99/"
-                            aria-label="LinkedIn">
+                            href="https://www.linkedin.com/in/imdeb99/" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a class="text-gray-400 hover:text-primary-400 transition-colors text-base xs:text-lg p-1"
-                            href="https://leetcode.com/imDEB99/"
-                            aria-label="LeetCode">
+                            href="https://leetcode.com/imDEB99/" aria-label="LeetCode">
                             <i class="cib-leetcode"></i>
                         </a>
                     </div>
@@ -406,41 +544,62 @@
 
     <!-- Back to Top Button -->
     <button
-        class="fixed bottom-8 right-8 bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-700"
-        id="back-to-top">
+        class="fixed bottom-8 right-8 bg-primary-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-primary-700"
+        id="back-to-top" aria-label="Back to top">
         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
         </svg>
     </button>
 
     <script>
-        // Blog filter functionality
+        // Gallery filter + lightbox
         document.addEventListener('DOMContentLoaded', function () {
-            const filterButtons = document.querySelectorAll('[data-category]');
-            const blogPosts = document.querySelectorAll('#blog-posts article');
+            const filterButtons = document.querySelectorAll('#gallery-filters [data-category]');
+            const items = document.querySelectorAll('#gallery-grid .gallery-item');
 
             filterButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     const category = this.getAttribute('data-category');
-
-                    // Update active button
                     filterButtons.forEach(btn => {
                         btn.classList.remove('bg-primary-600', 'text-white');
-                        btn.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                        btn.classList.add('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
                     });
-                    this.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                    this.classList.remove('bg-gray-100', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300');
                     this.classList.add('bg-primary-600', 'text-white');
 
-                    // Filter posts
-                    blogPosts.forEach(post => {
-                        if (category === 'all' || post.getAttribute('data-category') === category) {
-                            post.style.display = 'block';
-                        } else {
-                            post.style.display = 'none';
-                        }
+                    items.forEach(item => {
+                        item.style.display = (category === 'all' || item.getAttribute('data-category') === category) ? '' : 'none';
                     });
                 });
             });
+
+            // Lightbox
+            const lightbox = document.getElementById('lightbox');
+            const lbImage = document.getElementById('lightbox-image');
+            const lbFile = document.getElementById('lightbox-file');
+            const lbCaption = document.getElementById('lightbox-caption');
+            const lbClose = document.getElementById('lightbox-close');
+
+            document.querySelectorAll('.gallery-open').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    lbFile.textContent = 'Add image: ' + this.getAttribute('data-file');
+                    lbCaption.textContent = this.getAttribute('data-caption');
+                    lbImage.innerHTML = '<div class="text-center px-4"><i class="fas ' + this.getAttribute('data-icon') + '" aria-hidden="true"></i><span>' + lbFile.textContent + '</span></div>';
+                    lightbox.classList.remove('hidden');
+                    lightbox.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            function closeLightbox() {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            lbClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
         });
     </script>
 
@@ -462,13 +621,13 @@
                     <span class="text-xs font-medium">Blog</span>
                 </a>
             </div>
-            
+
             <!-- Center Home Button -->
             <a href="../index.html" class="flex flex-col items-center justify-center w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bottom-nav-link home-link" data-section="hero">
                 <i class="fas fa-home text-lg"></i>
                 <span class="text-xs font-semibold mt-0.5">Home</span>
             </a>
-            
+
             <!-- Right Group -->
             <div class="flex items-center space-x-1">
                 <a href="services.html" class="flex flex-col items-center px-2 py-1.5 rounded-xl text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 bottom-nav-link" data-section="services">

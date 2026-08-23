@@ -558,6 +558,85 @@ img {
     pointer-events: none;
 }
 
+/* ==========================================================================
+   Design System (added in redesign) - single primary accent utility classes
+   ========================================================================== */
+
+/* Uniform skill/tech chip: one consistent look site-wide */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    background-color: var(--chip-bg, rgb(224 242 254 / 0.8));
+    color: var(--chip-text, #0369a1);
+    border: 1px solid var(--chip-border, rgb(2 132 199 / 0.15));
+    white-space: nowrap;
+}
+
+.dark .chip {
+    background-color: rgb(12 74 110 / 0.4);
+    color: #7dd3fc;
+    border-color: rgb(56 189 248 / 0.2);
+}
+
+/* Image placeholder for project/blog/gallery cards.
+   Replace content later by dropping a real <img> into the container. */
+.media-placeholder {
+    position: relative;
+    width: 100%;
+    background-color: rgb(226 232 240 / 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: #64748b;
+}
+
+.dark .media-placeholder {
+    background-color: rgb(51 65 85 / 0.6);
+    color: #94a3b8;
+}
+
+.media-placeholder i {
+    font-size: 2rem;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+.media-placeholder span {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    opacity: 0.9;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 16:9 placeholder used on project & blog cards */
+.media-placeholder-16x9 {
+    aspect-ratio: 16 / 9;
+}
+
+/* Square placeholder used on gallery cards */
+.media-placeholder-square {
+    aspect-ratio: 1 / 1;
+}
+
+/* Section heading underline (single accent color) */
+.section-heading-underline {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: var(--primary-color);
+    border-radius: 9999px;
+}
+
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
     *,

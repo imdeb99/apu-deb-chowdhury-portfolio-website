@@ -574,8 +574,8 @@ Response time commitment: Within 24 hours
                         <div class="space-y-3">
                             <a href="https://wa.me/8801725291718?text=Hi! I'd like to schedule a consultation meeting to discuss my project." 
                                target="_blank"
-                               class="flex items-center p-4 bg-green-50 dark:bg-green-900/30 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors">
-                                <i class="fab fa-whatsapp text-green-600 dark:text-green-400 text-xl mr-3"></i>
+                               class="flex items-center p-4 bg-primary-50 dark:bg-primary-900/30 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors">
+                                <i class="fab fa-whatsapp text-primary-600 dark:text-primary-400 text-xl mr-3"></i>
                                 <div>
                                     <div class="font-medium">WhatsApp</div>
                                     <div class="text-sm text-gray-600 dark:text-gray-400">Quick scheduling via chat</div>
@@ -583,8 +583,8 @@ Response time commitment: Within 24 hours
                             </a>
                             
                             <a href="mailto:apudeb2000@gmail.com?subject=Meeting Request&body=Hi Apu,%0D%0A%0D%0AI'd like to schedule a consultation meeting to discuss my project.%0D%0A%0D%0APreferred dates/times:%0D%0A- %0D%0A- %0D%0A%0D%0AProject type:%0D%0A%0D%0ABest regards" 
-                               class="flex items-center p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
-                                <i class="fas fa-envelope text-blue-600 dark:text-blue-400 text-xl mr-3"></i>
+                               class="flex items-center p-4 bg-primary-50 dark:bg-primary-900/30 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors">
+                                <i class="fas fa-envelope text-primary-600 dark:text-primary-400 text-xl mr-3"></i>
                                 <div>
                                     <div class="font-medium">Email</div>
                                     <div class="text-sm text-gray-600 dark:text-gray-400">Detailed scheduling via email</div>
@@ -592,8 +592,8 @@ Response time commitment: Within 24 hours
                             </a>
                             
                             <a href="tel:+8801725291718" 
-                               class="flex items-center p-4 bg-purple-50 dark:bg-purple-900/30 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/50 transition-colors">
-                                <i class="fas fa-phone text-purple-600 dark:text-purple-400 text-xl mr-3"></i>
+                               class="flex items-center p-4 bg-primary-50 dark:bg-primary-900/30 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-colors">
+                                <i class="fas fa-phone text-primary-600 dark:text-primary-400 text-xl mr-3"></i>
                                 <div>
                                     <div class="font-medium">Phone Call</div>
                                     <div class="text-sm text-gray-600 dark:text-gray-400">Direct call (9 AM - 6 PM GMT+6)</div>

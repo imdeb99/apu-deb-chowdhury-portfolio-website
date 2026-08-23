@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Command Code session config / scratch
+.commandcode/
+commandcode-scratchpad/
+
+# Generated / local screenshots
+*.png
+!src/assets/images/**/*.png
+
+# Logs / temp
+*.log
+*.tmp

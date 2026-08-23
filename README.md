@@ -1,106 +1,101 @@
-# 🚀 Apu Deb Chowdhury - Portfolio Website
+# Apu Deb Chowdhury — Portfolio Website
 
-A modern, responsive portfolio website showcasing software engineering expertise, projects, and professional services. Built with cutting-edge web technologies and optimized for performance and accessibility.
+A modern, responsive multi-page portfolio site for **Apu Deb Chowdhury**, a Computer Science graduate and software engineer. Built with HTML, Tailwind CSS, and vanilla JavaScript — optimized for performance, accessibility, and a consistent design system across all pages.
 
-![Portfolio Preview](./src/assets/images/apu-deb-chowdhury-photo.jpg)
+## Preview
 
-## ✨ Features
+Open the live site locally, or deploy the static files to any hosting provider (Netlify, Vercel, GitHub Pages, etc.).
 
-### 🎨 **Modern Design**
-- **Responsive Layout**: Optimized for all devices (mobile, tablet, desktop)
-- **Dark/Light Mode**: Toggle between themes with smooth transitions
-- **Smooth Animations**: CSS animations and transitions for enhanced UX
-- **Professional UI**: Clean, modern design with consistent branding
+## Features
 
-### 📱 **Multi-Page Structure**
-- **Home Page** (`index.html`): Hero section, about, projects showcase, contact
-- **Projects Page** (`pages/projects.html`): Detailed project portfolio with filtering
-- **Blog Page** (`pages/blog.html`): Technical articles and insights
-- **Gallery Page** (`pages/gallery.html`): Visual showcase with categorized content
-- **Services Page** (`pages/services.html`): Professional service offerings and pricing
+### Design system
+- **Single primary accent color** (`#0284c7`) used consistently across every page for links, buttons, active states, icons, and badges — no per-card or per-category color rotations.
+- **Uniform chip components** for skills and project tech stacks (`src/css/styles.css` → `.chip`).
+- Consistent typography hierarchy, section spacing, and card-based layouts throughout.
+- **Dark / light mode** with persisted preference via a toggle in the top navbar.
 
-### 🔧 **Technical Features**
-- **SEO Optimized**: Meta tags, Open Graph, Twitter Cards
-- **Performance Optimized**: Preloaded resources, optimized images
-- **Accessibility**: ARIA labels, keyboard navigation, screen reader support
-- **Mobile-First**: Progressive enhancement approach
-- **Cross-Browser Compatible**: Works on all modern browsers
+### Pages
+- **Home** (`index.html`) — hero, about, experience & education timelines, skills, projects preview, blog preview, gallery preview, contact, footer.
+- **Projects** (`pages/projects.html`) — the real portfolio projects.
+- **Blog** (`pages/blog.html`) — technical articles and insights.
+- **Gallery** (`pages/gallery.html`) — a photo grid with category filters and a click-to-preview lightbox.
+- **Services** (`pages/services.html`) — service offerings, delivery process, and an inquiry form.
 
-### 🎯 **Interactive Elements**
-- **Mobile Navigation**: Hamburger menu with smooth animations
-- **Contact Forms**: Functional contact and inquiry forms
-- **Project Filtering**: Dynamic content filtering by technology/category
-- **Theme Persistence**: Remembers user's theme preference
-- **Smooth Scrolling**: Enhanced navigation experience
-- **Resume Download**: Direct download functionality for CV
+### Interactive elements
+- Mobile-bottom navigation plus a hamburger menu (icon-only on small screens, no duplication).
+- Scroll-spy active-state highlighting in the main navbar.
+- Contact/inquiry form with validation (`src/js/app.js`).
+- Back-to-top button, smooth scrolling, and scroll-reveal animations.
+- Resume download.
 
-## 🛠️ Tech Stack
+### Technical
+- Semantic HTML5, proper heading order, `alt`/`aria-label` on all images and icon-only controls.
+- Tailwind CSS via CDN with a shared `primary` palette in each page's config.
+- Responsive from 375px mobile up to desktop (single column → 2-column → full layout).
+- SEO meta tags (Open Graph, Twitter Card).
 
-### **Frontend**
-- **HTML5**: Semantic markup with accessibility features
-- **CSS3**: Modern styling with custom properties and animations
-- **JavaScript (ES6+)**: Interactive functionality and DOM manipulation
-- **Tailwind CSS**: Utility-first CSS framework for rapid development
-
-### **Libraries & Tools**
-- **Font Awesome**: Icon library for consistent iconography
-- **Google Fonts**: Custom typography (Poppins font family)
-- **Intersection Observer API**: Scroll-based animations and lazy loading
-
-### **Development Tools**
-- **VS Code**: Primary development environment
-- **Live Server**: Local development server
-- **Git**: Version control
-
-## 📁 Project Structure
+## Project structure
 
 ```
 apu-deb-chowdhury-portfolio/
-├── 📄 index.html                  # Main landing page
-├── 📄 favicon.ico                 # Website favicon
-├── 📄 README.md                   # Project documentation
-├── 📁 pages/                      # Sub-pages
-│   ├── 📄 projects.html           # Projects showcase
-│   ├── 📄 blog.html               # Blog and articles
-│   ├── 📄 gallery.html            # Visual portfolio gallery
-│   └── 📄 services.html           # Professional services
-└── � src/                        # Source files
-    ├── 📁 assets/                 # Static assets
-    │   ├── � images/             # Images and photos
-    │   └── � resume/             # CV documents
-    ├── 📁 css/                    # Stylesheets
-    │   └── 📄 styles.css          # Custom CSS styles
-    └── 📁 js/                     # JavaScript files
-        ├── 📄 app.js              # Main application logic
-        └── 📄 config.js           # Configuration files
+├── index.html                  # Landing page
+├── README.md
+├── pages/
+│   ├── projects.html           # Project showcase
+│   ├── blog.html               # Blog listing
+│   ├── gallery.html            # Photo grid + lightbox
+│   └── services.html           # Services & contact
+└── src/
+    ├── css/
+    │   └── styles.css          # Custom styles + design-system utilities
+    ├── js/
+    │   ├── app.js              # Theme, nav, forms, animations, lightbox
+    │   └── config.js           # Global config
+    └── assets/
+        ├── images/             # Photos (project screenshots, blog covers, gallery)
+        └── resume/             # CV/resume PDF
 ```
 
-## 🚀 Getting Started
+## Getting started
 
-### **Prerequisites**
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Local web server (optional for development)
+**Prerequisites:** a modern browser; a local static server (any of the options below).
 
-### **Installation**
+```bash
+# Option 1 — Python (no install required)
+python3 -m http.server 8000
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/imdeb99/apu-deb-chowdhury-portfolio-website.git
-   cd apu-deb-chowdhury-portfolio-website
-   ```
+# Option 2 — Node http-server
+npx http-server .
 
-2. **Open with Live Server**
-   - Install the Live Server extension in VS Code
-   - Right-click on `index.html` and select "Open with Live Server"
-   - Or use Python's built-in server:
-   ```bash
-   python3 -m http.server 8000
-   ```
+# Option 3 — VS Code "Live Server"
+# Right-click index.html → Open with Live Server
+```
 
+Then open <http://localhost:8000>.
 
-## 👤 Author
+No build step or package install is required — the site runs as plain static files.
+
+## Adding images
+
+Real photos are added manually by the site owner. Each project, blog, and gallery card shows a **placeholder** with the filename it expects (e.g. `smart-med.jpg`, `deb-commerce.jpg`, `gallery-ceh-1.jpg`). Drop the matching file into `src/assets/images/…` (or the `gallery/` subfolder) and it appears with zero code changes.
+
+## Customization
+
+- **Colors / spacing / typography:** edit the `tailwind.config` `primary` palette in each page and the design-system utilities in `src/css/styles.css`.
+- **Content:** edit the relevant section directly in each `*.html` file.
+- **Nav behavior, forms, animations:** edit `src/js/app.js` (keep element IDs like `theme-toggle`, `mobile-menu`, `back-to-top`, `contact-form` intact).
+
+## Deploying
+
+Because it's pure static HTML, deploy by:
+
+1. Building nothing — just upload the project folder, or
+2. Pushing to GitHub and enabling Pages, or
+3. Dragging the folder into Netlify/Vercel.
+
+## Author
 
 **Apu Deb Chowdhury**
 - GitHub: [@imdeb99](https://github.com/imdeb99)
 - LinkedIn: [Apu Deb Chowdhury](https://www.linkedin.com/in/apudebchowdhury)
-
+- Location: Habiganj, Sylhet, Bangladesh 🇧🇩
