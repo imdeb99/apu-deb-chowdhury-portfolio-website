@@ -49,6 +49,8 @@ body {
 section {
     overflow-x: hidden;
     width: 100%;
+    /* Offset native anchor/smooth-scroll targets beneath the fixed navbar */
+    scroll-margin-top: var(--navbar-height-desktop);
 }
 
 /* Text wrapping for all text elements */
@@ -62,6 +64,10 @@ p, span, div, h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1023px) {
     body {
         padding-top: var(--navbar-height-mobile);
+    }
+
+    section {
+        scroll-margin-top: var(--navbar-height-mobile);
     }
 }
 
@@ -566,21 +572,35 @@ img {
 .chip {
     display: inline-flex;
     align-items: center;
-    padding: 0.25rem 0.625rem;
-    border-radius: 0.375rem;
-    font-size: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
     font-weight: 500;
     line-height: 1.4;
-    background-color: var(--chip-bg, rgb(224 242 254 / 0.8));
+    background-color: var(--chip-bg, rgb(224 242 254 / 0.9));
     color: var(--chip-text, #0369a1);
-    border: 1px solid var(--chip-border, rgb(2 132 199 / 0.15));
+    border: 1px solid var(--chip-border, rgb(2 132 199 / 0.18));
+    box-shadow: 0 1px 2px rgb(2 132 199 / 0.06);
     white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .dark .chip {
-    background-color: rgb(12 74 110 / 0.4);
+    background-color: rgb(12 74 110 / 0.45);
     color: #7dd3fc;
-    border-color: rgb(56 189 248 / 0.2);
+    border-color: rgb(56 189 248 / 0.22);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.18);
+}
+
+.chip:hover {
+    background-color: rgb(219 234 254 / 1);
+    box-shadow: 0 2px 6px rgb(2 132 199 / 0.18);
+    transform: translateY(-1px);
+}
+
+.dark .chip:hover {
+    background-color: rgb(12 74 110 / 0.7);
+    box-shadow: 0 2px 6px rgb(56 189 248 / 0.25);
 }
 
 /* Image placeholder for project/blog/gallery cards.
